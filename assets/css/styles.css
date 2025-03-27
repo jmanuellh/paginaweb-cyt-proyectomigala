@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-color: #EEE;
+  --text-color: #111;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,6 +17,18 @@ html {
 body {
   font-family: system-ui, -apple-system, sans-serif;
   line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.iconos-redes {
+  fill: var(--text-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --bg-color: #111;
+    --text-color: #EEE;
+  }
 }
 
 /* Utility classes */
